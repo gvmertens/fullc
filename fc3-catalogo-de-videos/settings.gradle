@@ -1,0 +1,5 @@
+rootProject.name = 'fc3-catalogo-de-videos'
+include 'domain'
+include 'application'
+include 'infrastructure'
+
