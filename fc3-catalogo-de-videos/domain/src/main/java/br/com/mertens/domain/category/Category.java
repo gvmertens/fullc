@@ -1,6 +1,7 @@
 package br.com.mertens.domain.category;
 
 import br.com.mertens.domain.AggregateRoot;
+import br.com.mertens.domain.validation.ValidationHandler;
 
 import java.awt.dnd.DragGestureRecognizer;
 import java.time.Instant;
@@ -41,6 +42,11 @@ public class Category extends AggregateRoot<CategoryID> {
 
     public CategoryID getId() {
         return id;
+    }
+
+    @Override
+    public void validate(ValidationHandler handler) {
+        new CategoryValidator(this, handler).validate();
     }
 
     public String getName() {
