@@ -1,4 +1,4 @@
-package br.com.mertens.domain;
+package br.com.mertens.domain.validation;
 
 import br.com.mertens.domain.validation.ValidationHandler;
 

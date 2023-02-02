@@ -1,6 +1,6 @@
 package br.com.mertens.domain.category;
 
-import br.com.mertens.domain.Validator;
+import br.com.mertens.domain.validation.Validator;
 import br.com.mertens.domain.validation.ValidationHandler;
 import br.com.mertens.domain.validation.Error;
 

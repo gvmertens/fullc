@@ -3,13 +3,10 @@ package br.com.mertens.domain.category;
 import br.com.mertens.domain.AggregateRoot;
 import br.com.mertens.domain.validation.ValidationHandler;
 
-import java.awt.dnd.DragGestureRecognizer;
 import java.time.Instant;
-import java.util.UUID;
 
 public class Category extends AggregateRoot<CategoryID> {
 
-    private CategoryID id;
     private String name;
     private String description;
     private boolean active;
@@ -37,11 +34,46 @@ public class Category extends AggregateRoot<CategoryID> {
     public static Category newCategory(final String aName, final String aDescription, final boolean isActive) {
         final var id = CategoryID.unique();
         final var now = Instant.now();
-        return new Category(id, aName, aDescription, isActive, now, now, null);
+
+        final var deletedAt = isActive ? null : now;
+
+        return new Category(id, aName, aDescription, isActive, now, now, deletedAt);
     }
 
     public CategoryID getId() {
         return id;
+    }
+
+    public static Category with(
+            final CategoryID anId,
+            final String name,
+            final String description,
+            final boolean active,
+            final Instant createdAt,
+            final Instant updatedAt,
+            final Instant deletedAt
+    ) {
+        return new Category(
+                anId,
+                name,
+                description,
+                active,
+                createdAt,
+                updatedAt,
+                deletedAt
+        );
+    }
+
+    public static Category with(final Category aCategory) {
+        return with(
+                aCategory.getId(),
+                aCategory.name,
+                aCategory.description,
+                aCategory.isActive(),
+                aCategory.createdAt,
+                aCategory.updatedAt,
+                aCategory.deletedAt
+        );
     }
 
     @Override

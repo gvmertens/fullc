@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.mertens.domain.category.CategoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-01T14:00:39" hostname="TF-GUILHERME" time="0.033">
+<testsuite name="br.com.mertens.domain.category.CategoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-02T17:37:02" hostname="TF-GUILHERME" time="0.034">
   <properties/>
-  <testcase name="givenAnInvalidNullName_whenCallNewCategoryAndValidade_thenShouldReceiveError()" classname="br.com.mertens.domain.category.CategoryTest" time="0.033"/>
+  <testcase name="givenAValidFalseIsActive_whenCallNewCategory_thenInstatiateACategory()" classname="br.com.mertens.domain.category.CategoryTest" time="0.034"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
