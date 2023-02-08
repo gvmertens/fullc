@@ -23,7 +23,8 @@ public class DefaultCreateCategoryUseCase extends CreateCategoryUseCase {
     public Either<Notification, CreateCategoryOutput> execute(final CreateCategoryCommand aCommand) {
 
         final var notification = Notification.create();
-        final Category aCategory = Category.newCategory(aCommand.name(), aCommand.description(), aCommand.isActive());
+
+        final var aCategory = Category.newCategory(aCommand.name(), aCommand.description(), aCommand.isActive());
         aCategory.validate(notification);
 
         return notification.hasError() ? Left(notification) : create(aCategory); //CreateCategoryOutput.from(this.categoryGateway.create(aCategory)
