@@ -1,13 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.mertens.application.category.update.UpdateCategoryUseCaseTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-08T16:09:14" hostname="TF-GUILHERME" time="51.168">
-  <properties/>
-  <testcase name="givenAInvalidName_whenCallsUpdateCategory_thenShouldReturnDomainException()" classname="br.com.mertens.application.category.update.UpdateCategoryUseCaseTest" time="51.168">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;br.com.mertens.domain.category.Category.getId()&quot; because &quot;aCategory&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;br.com.mertens.domain.category.Category.getId()&quot; because &quot;aCategory&quot; is null
-	at br.com.mertens.application.category.update.UpdateCategoryOutput.from(UpdateCategoryOutput.java:12)
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CreateCategoryUseCaseTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CreateCategoryUseCaseTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/br.com.mertens.application.category.create.html">br.com.mertens.application.category.create</a> &gt; CreateCategoryUseCaseTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.220s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="givenAnInvalidCommand_whenCallsCreateCategory_shouldReturnCategoryId()"></a>
+<h3 class="failures">givenAnInvalidCommand_whenCallsCreateCategory_shouldReturnCategoryId()</h3>
+<span class="code">
+<pre>java.lang.NullPointerException: Cannot invoke &quot;br.com.mertens.domain.category.Category.getId()&quot; because &quot;aCategory&quot; is null
+	at br.com.mertens.application.category.create.CreateCategoryOutput.from(CreateCategoryOutput.java:10)
 	at io.vavr.control.Either.bimap(Either.java:160)
-	at br.com.mertens.application.category.update.DefaultUpdateCategoryUseCase.update(DefaultUpdateCategoryUseCase.java:45)
-	at br.com.mertens.application.category.update.DefaultUpdateCategoryUseCase.execute(DefaultUpdateCategoryUseCase.java:39)
-	at br.com.mertens.application.category.update.UpdateCategoryUseCaseTest.givenAInvalidName_whenCallsUpdateCategory_thenShouldReturnDomainException(UpdateCategoryUseCaseTest.java:94)
+	at br.com.mertens.application.category.create.DefaultCreateCategoryUseCase.create(DefaultCreateCategoryUseCase.java:36)
+	at br.com.mertens.application.category.create.DefaultCreateCategoryUseCase.execute(DefaultCreateCategoryUseCase.java:30)
+	at br.com.mertens.application.category.create.CreateCategoryUseCaseTest.givenAnInvalidCommand_whenCallsCreateCategory_shouldReturnCategoryId(CreateCategoryUseCaseTest.java:70)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,8 +162,37 @@
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">givenAnInvalidCommand_whenCallsCreateCategory_shouldReturnCategoryId()</td>
+<td class="failures">1.220s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at Feb 8, 2023, 2:33:36 PM</p>
+</div>
+</div>
+</body>
+</html>
