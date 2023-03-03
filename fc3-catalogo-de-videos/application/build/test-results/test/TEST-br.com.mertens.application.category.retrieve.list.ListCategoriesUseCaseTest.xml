@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.mertens.application.category.retrieve.list.ListCategoriesUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-10T10:42:42" hostname="TF-GUILHERME" time="1.277">
-  <properties/>
-  <testcase name="givenAValidQuery_whenCallsListCategories_thenShouldReturnCategories()" classname="br.com.mertens.application.category.retrieve.list.ListCategoriesUseCaseTest" time="1.277"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

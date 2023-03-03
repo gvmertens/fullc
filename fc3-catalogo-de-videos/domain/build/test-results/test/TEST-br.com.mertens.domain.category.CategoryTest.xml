@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.mertens.domain.category.CategoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-03T11:28:42" hostname="TF-GUILHERME" time="0.031">
-  <properties/>
-  <testcase name="givenAValidCategory_whenCallUpdateToInacte_thenReturnACategoryUpdate()" classname="br.com.mertens.domain.category.CategoryTest" time="0.031"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
